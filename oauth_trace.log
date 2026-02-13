@@ -1,0 +1,161 @@
+{
+  "timestamp_utc": "2026-02-13T03:13:26.746929+00:00",
+  "event": "OAUTH_FLOW_STARTED",
+  "data": {
+    "instance": "https://sample-dev-ed.trailblaze.my.salesforce.com",
+    "client_id": "3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo",
+    "redirect_uri": "http://localhost:8000/callback"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:26.768236+00:00",
+  "event": "PKCE_GENERATED",
+  "data": {
+    "raw_random_bytes_hex": "23388ee7c0a5ae029470d15c0084f3e77e8c0dcf4214f45aa39d5a372da824981ca63c79d137a877",
+    "code_verifier": "IziO58ClrgKUcNFcAITz536MDc9CFPRao51aNy2oJJgcpjx50Teodw",
+    "sha256_digest_hex": "266479a4878a96576b01d840a1d8d302379b4d92727822307f7449d87ff248eb",
+    "code_challenge": "JmR5pIeKlldrAdhAodjTAjebTZJyeCIwf3RJ2H_ySOs",
+    "challenge_method": "S256"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:26.776008+00:00",
+  "event": "AUTH_URL_BUILT",
+  "data": {
+    "base_url": "https://sample-dev-ed.trailblaze.my.salesforce.com/services/oauth2/authorize",
+    "query_params": {
+      "client_id": "3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo",
+      "redirect_uri": "http://localhost:8000/callback",
+      "response_type": "code",
+      "code_challenge": "JmR5pIeKlldrAdhAodjTAjebTZJyeCIwf3RJ2H_ySOs",
+      "code_challenge_method": "S256"
+    },
+    "encoded_query": "client_id=3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&code_challenge=JmR5pIeKlldrAdhAodjTAjebTZJyeCIwf3RJ2H_ySOs&code_challenge_method=S256",
+    "final_auth_url": "https://sample-dev-ed.trailblaze.my.salesforce.com/services/oauth2/authorize?client_id=3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&code_challenge=JmR5pIeKlldrAdhAodjTAjebTZJyeCIwf3RJ2H_ySOs&code_challenge_method=S256"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:26.781099+00:00",
+  "event": "OPENING_BROWSER",
+  "data": "https://sample-dev-ed.trailblaze.my.salesforce.com/services/oauth2/authorize?client_id=3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&code_challenge=JmR5pIeKlldrAdhAodjTAjebTZJyeCIwf3RJ2H_ySOs&code_challenge_method=S256"
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:26.892952+00:00",
+  "event": "CALLBACK_SERVER_CONFIG",
+  "data": {
+    "hostname": "localhost",
+    "port": 8000,
+    "path": "/callback"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:26.908163+00:00",
+  "event": "CALLBACK_SERVER_STARTED",
+  "data": {
+    "listening_on": "http://localhost:8000/callback",
+    "port": 8000
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.267807+00:00",
+  "event": "CALLBACK_RAW_PATH_RECEIVED",
+  "data": "/callback?code=aPrxSQ3aaqvXvXS1YFs99kfElnR6laQluNi_m0uNK6SFMvIDfRt57JVu3fwgRWJCHQOSojJ8PXy_VW4ohqzxl.LxsGrGRPE%3D"
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.271779+00:00",
+  "event": "AUTHORIZATION_CODE_EXTRACTED",
+  "data": "aPrxSQ3aaqvXvXS1YFs99kfElnR6laQluNi_m0uNK6SFMvIDfRt57JVu3fwgRWJCHQOSojJ8PXy_VW4ohqzxl.LxsGrGRPE="
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.275174+00:00",
+  "event": "TOKEN_REQUEST_PREPARED",
+  "data": {
+    "token_url": "https://sample-dev-ed.trailblaze.my.salesforce.com/services/oauth2/token",
+    "form_payload": {
+      "grant_type": "authorization_code",
+      "code": "aPrxSQ3aaqvXvXS1YFs99kfElnR6laQluNi_m0uNK6SFMvIDfRt57JVu3fwgRWJCHQOSojJ8PXy_VW4ohqzxl.LxsGrGRPE=",
+      "client_id": "3MVG9JJwBBbcN47K5GDwV5CMZb7YPOak6qFo8qEU0AWObcE2yBbhJtF0v18keWmZHcFkED7b3vso3NU46NIjo",
+      "redirect_uri": "http://localhost:8000/callback",
+      "code_verifier": "IziO58ClrgKUcNFcAITz536MDc9CFPRao51aNy2oJJgcpjx50Teodw",
+      "client_secret": "99FBD74CEE363E817535EA8B13BFD11EF6AU04YSPTQS27RHFDV9MJEMPQDECKIP"
+    }
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.817185+00:00",
+  "event": "TOKEN_RESPONSE_RECEIVED",
+  "data": {
+    "status_code": 200,
+    "response_headers": {
+      "Date": "Fri, 13 Feb 2026 03:13:27 GMT",
+      "Content-Type": "application/json;charset=UTF-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "X-Robots-Tag": "none",
+      "Set-Cookie": "CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Feb-2027 03:13:27 GMT; Max-Age=31536000; secure, LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Feb-2027 03:13:27 GMT; Max-Age=31536000; secure, BrowserId=91gLZAiJEfGb1mFv3ro3-w; domain=.salesforce.com; path=/; expires=Sat, 13-Feb-2027 03:13:27 GMT; Max-Age=31536000; secure; SameSite=None",
+      "X-Content-Type-Options": "nosniff",
+      "Vary": "Accept-Encoding",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+      "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "Content-Encoding": "gzip",
+      "Cache-Control": "no-cache,must-revalidate,max-age=0,no-store,private",
+      "Server": "sfdcedge",
+      "X-SFDC-Request-Id": "5becbcc6ab30beca53e36d7ee80ceadc",
+      "X-Request-Id": "5becbcc6ab30beca53e36d7ee80ceadc"
+    },
+    "raw_body": "{\"access_token\":\"00Dak0000000000!X5uk20JAGuO3FR8gPDO607BR6ffWfaFIKQb7YOCBw08b3FE0TDG1fVp8aeCTq25OdC0B9yD8W1Ajiv46Y3Pm3o37j51qB3LK\",\"refresh_token\":\"5AeFS689N62y7ZV4zE1skBM0ziB7K9euw1s19p8eSX7h.rizGM1_QQQ.vch3u7yYl.7kfdVKK03W.rxTPYBmskM\",\"signature\":\"vXu9CpiCNIXtX2EH4BmWH583firy5XH9ZpU6AVJETd0=\",\"scope\":\"refresh_token sfap_api web api\",\"instance_url\":\"https://sample-dev-ed.trailblaze.my.salesforce.com\",\"id\":\"https://login.salesforce.com/id/00Dak0000000000EAA/005ak0000000000AAA\",\"token_type\":\"Bearer\",\"issued_at\":\"1770952407907\",\"api_instance_url\":\"https://api.salesforce.com\"}"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.821556+00:00",
+  "event": "TOKEN_RESPONSE_PARSED",
+  "data": {
+    "access_token": "00Dak0000000000!X5uk20JAGuO3FR8gPDO607BR6ffWfaFIKQb7YOCBw08b3FE0TDG1fVp8aeCTq25OdC0B9yD8W1Ajiv46Y3Pm3o37j51qB3LK",
+    "refresh_token": "5AeFS689N62y7ZV4zE1skBM0ziB7K9euw1s19p8eSX7h.rizGM1_QQQ.vch3u7yYl.7kfdVKK03W.rxTPYBmskM",
+    "signature": "vXu9CpiCNIXtX2EH4BmWH583firy5XH9ZpU6AVJETd0=",
+    "scope": "refresh_token sfap_api web api",
+    "instance_url": "https://sample-dev-ed.trailblaze.my.salesforce.com",
+    "id": "https://login.salesforce.com/id/00Dak0000000000EAA/005ak0000000000AAA",
+    "token_type": "Bearer",
+    "issued_at": "1770952407907",
+    "api_instance_url": "https://api.salesforce.com"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.826413+00:00",
+  "event": "OAUTH_FLOW_COMPLETE",
+  "data": {
+    "access_token": "00Dak0000000000!X5uk20JAGuO3FR8gPDO607BR6ffWfaFIKQb7YOCBw08b3FE0TDG1fVp8aeCTq25OdC0B9yD8W1Ajiv46Y3Pm3o37j51qB3LK",
+    "refresh_token": "5AeFS689N62y7ZV4zE1skBM0ziB7K9euw1s19p8eSX7h.rizGM1_QQQ.vch3u7yYl.7kfdVKK03W.rxTPYBmskM",
+    "instance_url": "https://sample-dev-ed.trailblaze.my.salesforce.com",
+    "id_url": "https://login.salesforce.com/id/00Dak0000000000EAA/005ak0000000000AAA"
+  }
+}
+
+{
+  "timestamp_utc": "2026-02-13T03:13:27.830855+00:00",
+  "event": "FINAL_TOKEN_RECEIVED",
+  "data": {
+    "access_token": "00Dak0000000000!X5uk20JAGuO3FR8gPDO607BR6ffWfaFIKQb7YOCBw08b3FE0TDG1fVp8aeCTq25OdC0B9yD8W1Ajiv46Y3Pm3o37j51qB3LK",
+    "refresh_token": "5AeFS689N62y7ZV4zE1skBM0ziB7K9euw1s19p8eSX7h.rizGM1_QQQ.vch3u7yYl.7kfdVKK03W.rxTPYBmskM",
+    "signature": "vXu9CpiCNIXtX2EH4BmWH583firy5XH9ZpU6AVJETd0=",
+    "scope": "refresh_token sfap_api web api",
+    "instance_url": "https://sample-dev-ed.trailblaze.my.salesforce.com",
+    "id": "https://login.salesforce.com/id/00Dak0000000000EAA/005ak0000000000AAA",
+    "token_type": "Bearer",
+    "issued_at": "1770952407907",
+    "api_instance_url": "https://api.salesforce.com"
+  }
+}
+
